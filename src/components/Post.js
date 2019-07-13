@@ -5,12 +5,14 @@ import {
     Image,
     Dimensions
 } from 'react-native'
+import Author from './Author'
 
 class Post extends Component {
     render(){
         return(
             <View style={styles.container}>
                 <Image source={this.props.image} style={styles.image} />
+                <Author email='jose_netopio_12@hotmail.com' nickname='Prioxe' />
             </View>
         )
     }
@@ -23,7 +25,7 @@ const styles = StyleSheet.create({
     },
     image:{
         width: Dimensions.get('window').width,
-        height: Dimensions.get('window').width * 3 / 4,
+        height: Dimensions.get('window').width * 3/4,
         resizeMode: 'contain'
     }
 })
