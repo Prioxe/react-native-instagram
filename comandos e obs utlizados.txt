@@ -1,0 +1,19 @@
+react-native init --version="0.56.0" lambe   (Criando o projeto e coloca a versão)
+
+emulator -no-snapshot -avd Nexus_5X_API_28  (Emulando meu telefone)
+
+instalei as seguintes dependencias
+
+    "axios": "0.18.0",
+    "react-native-gravatar": "1.0.2",
+    "react-native-image-picker": "0.27.1",
+    "react-native-vector-icons": "5.0.0",
+    "react-navigation": "2.14.2",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "redux-thunk": "2.3.0"
+
+npm i (para baixar as dep.)
+
+
+react-native link (subir as imagnes no projeto:) )
