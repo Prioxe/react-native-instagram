@@ -29,7 +29,10 @@ const styles = StyleSheet.create({
         marginHorizontal: 10
     },
     nickname:{
-
+        color: '#444',
+        marginVertical: 10,
+        fontSize: 15,
+        fontWeight: 'bold'
     },
 })
 
