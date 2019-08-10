@@ -17,7 +17,7 @@ class Post extends Component {
                 <Author email={this.props.email}
                      nickname={this.props.nickname} />
                 <Comments comments={this.props.comments} />
-                <AddComment />
+                <AddComment postId={this.props.id} />
             </View>
         )
     }

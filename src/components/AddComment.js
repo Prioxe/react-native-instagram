@@ -1,4 +1,6 @@
 import React,{ Component } from 'react'
+import { connect } from 'react-redux'
+import { addComment } from '../store/actions/posts'
 import {
     View,
     Text,
@@ -18,7 +20,15 @@ class Addcomment extends Component {
 
 
    handleAddComment = () => {
-       Alert.alert('Adicionado!' , this.props.comment)
+       this.props.onAddComment({
+           postId: this.props.postId,
+           comment: {
+               nickname: this.props.name,
+               comment: this.state.comment
+           }
+       })
+
+       this.setState( { comment: '', editMode: false})
    }
 
    render() {
@@ -77,4 +87,20 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Addcomment
+
+const mapStateToProps = ({ user }) => {
+    return {
+        name: user.name
+    }
+}
+
+
+const mapDispathToProps = dispatch => {
+    return {
+        onAddComment: playload => dispatch(addComment(playload))
+    }
+}
+
+export default connect(mapStateToProps, mapDispathToProps)(Addcomment)
+
+// export default Addcomment
