@@ -24,3 +24,9 @@ firebase login (Logar no firebase)
 firebase init (criar o projeto)
 
 npm i -s @google-cloud/storage cors uuid-v4 (Persisti a imagem no firebase uma API publica com ID unico.)
+
+firebase deploy --project nome do projeto (deploy) {lambe-react-native-code-firebase} Aula 129
+
+ou
+
+firebase deploy
