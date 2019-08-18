@@ -19,9 +19,9 @@ exports.uploadImage = functions.https.onRequest((request, response) => {
 
         const bucket = storage.bucket('lambe-react-native-code.appspot.com')
         const id = uuid()
-        bucket.upload('/tmp/imageTosave.jpg', {
+        bucket.upload('/tmp/imageToSave.jpg', {
             uploadType: 'media',
-            destination: `/post/${id}.jpg`,
+            destination: `/posts/${id}.jpg`,
             metadata:{
                 metadata: {
                     contentType: 'image/jpeg',
